@@ -41,7 +41,7 @@ jobs:
         id: referencetests
         continue-on-error: true
         run: >
-          JULIA_REFERENCETESTS_UPDATE=true DISPLAY=:0 xvfb-run -s '-screen 0 1024x768x24' julia --depwarn=yes -e 'using Pkg; Pkg.activate(temp=true); Pkg.Registry.update(); Pkg.update(); Pkg.develop(path="."); Pkg.test("ITensorGLMakie")'
+          DISPLAY=:0 xvfb-run -s '-screen 0 1024x768x24' julia --depwarn=yes -e 'using Pkg; Pkg.activate(temp=true); Pkg.Registry.update(); Pkg.update(); Pkg.develop(path="."); Pkg.test("ITensorGLMakie")'
           && echo "TESTS_SUCCESSFUL=true" >> $GITHUB_ENV
       - name: Upload test Artifacts
         uses: actions/upload-artifact@v4
