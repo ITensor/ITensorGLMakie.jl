@@ -1,9 +1,7 @@
 using ITensorGLMakie
 using Documenter
 
-DocMeta.setdocmeta!(
-  ITensorGLMakie, :DocTestSetup, :(using ITensorGLMakie); recursive=true
-)
+DocMeta.setdocmeta!(ITensorGLMakie, :DocTestSetup, :(using ITensorGLMakie); recursive=true)
 
 makedocs(;
   modules=[ITensorGLMakie],

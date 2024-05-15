@@ -1,4 +1,5 @@
 using ITensors
+using ITensorMPS
 using ITensorGLMakie
 
 s = siteinds("S=1/2", 5; conserve_qns=true)

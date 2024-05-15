@@ -5,4 +5,4 @@ using GLMakie
 
 @reexport using ITensorMakie
 
-end # module
+end

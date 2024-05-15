@@ -1,4 +1,5 @@
 using ITensors
+using ITensorMPS
 using ITensorGLMakie
 using Graphs
 using PastaQ: qft
