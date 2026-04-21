@@ -7,6 +7,14 @@ ITensors = "9136182c-28ba-11e9-034c-db9fb085ebd5"
 LayeredLayouts = "f4a74d36-062a-4d48-97cd-1356bad1de4e"
 NetworkLayout = "46757867-2c16-5918-afeb-47bfcb05e46a"
 
+[sources.ITensorGLMakie]
+path = ".."
+
 [compat]
-ITensorMPS = "0.2.2"
-ITensors = "0.6.8"
+GeometryBasics = "0.4.1, 0.5"
+Graphs = "1.4.1"
+ITensorGLMakie = "0.2"
+ITensorMPS = "0.3"
+ITensors = "0.7, 0.8, 0.9"
+LayeredLayouts = "0.2"
+NetworkLayout = "0.4.3"

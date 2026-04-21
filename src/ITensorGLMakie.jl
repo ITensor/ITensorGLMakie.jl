@@ -1,7 +1,7 @@
 module ITensorGLMakie
 
-using Reexport
 using GLMakie
+using Reexport
 
 @reexport using ITensorMakie
 

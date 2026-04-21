@@ -1,9 +1,9 @@
-using ITensors
-using ITensorGLMakie
 using Graphs
+using ITensorGLMakie
+using ITensors
 
 tn = itensornetwork(grid((3, 3, 3)))
-edge_labels = (; dims=false)
+edge_labels = (; dims = false)
 @visualize fig tn ndims = 3 edge_labels = edge_labels vertex_size = 400
 
 fig

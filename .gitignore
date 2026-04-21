@@ -1,3 +1,15 @@
-.*.swp
+*.cov
+*.mem
+*.o
+*.swp
 .DS_Store
-Manifest.toml
+.benchmarkci
+.tmp
+.vscode/
+.worktrees/
+LocalPreferences.toml
+Manifest*.toml
+benchmark/*.json
+dev/
+docs/build/
+docs/src/index.md
