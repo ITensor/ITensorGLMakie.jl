@@ -24,7 +24,7 @@ jobs:
       matrix:
         version:
           - 'lts'
-          - '1'
+          - '1.11'
         os:
           - ubuntu-latest
     steps:
