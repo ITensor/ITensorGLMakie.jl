@@ -1,6 +1,6 @@
 name = "ITensorGLMakie"
 uuid = "3f718f31-6db8-4f43-a433-67cb5c73363e"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["Matthew Fishman <mfishman@flatironinstitute.org>"]
 
 [workspace]

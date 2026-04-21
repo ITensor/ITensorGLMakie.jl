@@ -39,7 +39,11 @@ using Test
 
     fig_tn = @visualize_noeval tn
 
-    by = extension == "png" ? psnr_equality(0.5) : isequal
+    # PSNR threshold — higher is stricter. GraphMakie convention is
+    # GOOD=60 / MEH=40 (pass / @test_broken). We start with a plain
+    # threshold of 40 — anything below is a clear GL/Makie/Mesa drift;
+    # follow-ups can add a @test_broken band at 40–60 for earlier warnings.
+    by = extension == "png" ? psnr_equality(40) : isequal
 
     @test_reference "references/R.$extension" figR by = by
     @test_reference "references/R1.$extension" figR1 by = by
