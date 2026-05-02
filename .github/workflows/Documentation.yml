@@ -15,6 +15,7 @@ jobs:
     name: "Documentation"
     uses: "ITensor/ITensorActions/.github/workflows/Documentation.yml@v1"
     with:
+      os: "ubuntu-22.04"
       localregistry: "https://github.com/ITensor/ITensorRegistry.git"
       apt-packages: "xorg-dev mesa-utils xvfb libgl1 freeglut3-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libxext-dev"
       doc-prefix: "xvfb-run -a -s '-screen 0 1024x768x24' "
