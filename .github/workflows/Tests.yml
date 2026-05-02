@@ -5,6 +5,7 @@ on:
       - "master"
       - "main"
       - "release-"
+    tags: "*"
     paths-ignore:
       - "docs/**"
   pull_request:
@@ -29,7 +30,7 @@ jobs:
           - "1"
         os:
           - "ubuntu-latest"
-    uses: "ITensor/ITensorActions/.github/workflows/Tests.yml@main"
+    uses: "ITensor/ITensorActions/.github/workflows/Tests.yml@v1"
     with:
       group: "${{ matrix.group }}"
       julia-version: "${{ matrix.version }}"
